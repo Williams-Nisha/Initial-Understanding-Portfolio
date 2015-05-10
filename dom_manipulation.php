@@ -104,6 +104,47 @@
             </script>
             <hr>
             <h2>My Code</h2>
+            <p>The box starts out blue. It will turn red when you click on it and yellow when you release.</p>
+            <pre>
+                <code>
+                   &lt;!DOCTYPEl&gt;
+                   &lt;html&gt;
+                   &lt;head&gt;
+                   &lt;/head&gt;
+                   &lt;body&gt;
+                   &lt;div id="blue" class="bluebox"&gt;
+                   &lt;script&gt;
+            
+                function mouseDown(obj){
+                obj.style.backgroundColor="red";
+                obj.innerHTML ="How embarrasing!";
+                
+                }
+                function mouseUp(obj){
+                obj.style.backgroundColor="yellow";
+                obj.innerHTML ="Much Better!";
+                
+                }
+           &lt;/script&gt;
+           &lt;html&gt;
+                </code>
+            </pre>
+            
+            <div id="blue" class="bluebox" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)">Click me</div>   
+            <script>
+            
+                function mouseDown(obj){
+                obj.style.backgroundColor="red";
+                obj.innerHTML ="How embarrasing!";
+                
+                }
+                function mouseUp(obj){
+                obj.style.backgroundColor="yellow";
+                obj.innerHTML ="Much Better!";
+                
+                }
+            </script>
+            <hr>
         </article>
         <article>
             <h2>Resources:</h2>
