@@ -1,0 +1,338 @@
+/*Css stylesheet for nishamwilliams.com*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	background: url(/images/swirl.png)repeat top left #9ce5e0;
+	color: #222;
+
+	
+}
+h2, h3, h4, h5, h6 {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding:0px;
+}
+
+h1 {
+	font-size: 1.75em;
+	color:#27B3CF;
+	text-align: center;
+}
+h2 {
+	font-size: 1.625em;
+	color:#27B3CF;
+}
+h3 {
+	font-size: 1.25em;
+	font-weight: bold;
+	color:#27B3CF;
+}
+h4 {
+	font-size: 1.125em;
+	font-weight: bold;
+}
+h5 {
+	font-size: 1em;
+	color:#f7bc80;
+	font-weight: bold;
+}
+h6 {
+	font-size: 1em;
+	color:#f7bc80;
+	font-weight: bold;
+}
+
+nav ul{
+    background: #f9879c;
+    padding: 15px 10px;
+    margin: 20px 0;
+}
+nav li {
+	display:inline;
+	margin: 0 10px;
+}
+
+nav ul li a:hover {
+	color:#fff;
+	text-decoration:none;
+	padding: 15px 0px;
+	background:#27B3CF;
+}
+navul li:hover > ul
+{
+	display:block;
+}
+nav ul li a:visited {
+	color:#fff;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size:1.1rem;
+}
+nav ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0
+}
+
+nav ul ul li
+{
+	float:none;
+	width:200px
+}
+
+nav ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+pre {
+    white-space: pre-wrap;
+}
+main {
+	width: 90%;
+	margin:0 auto;
+}
+footer {
+	background-color: #f9879c;
+	margin:20px 0 0;
+	color: #fff;
+	padding:10px;
+	margin:30px 0px 0px;
+}
+footer a {
+	text-decoration: none;
+	color:#fff;
+	padding:0 10px;
+}
+footer a:visited {
+        color:#fff;
+}
+/*Structure for the website*/
+.container {
+	width:1100px;
+	background-color: #fff;
+	margin: 0 auto;
+
+}
+.featurecontainer {
+	margin-left: auto;
+	margin-right: auto;
+}
+.featurebox{
+	padding: 8px;
+	float:left;
+	margin: 20px;
+}
+.pad    {
+        padding:8px;
+        margin: 20px;
+}
+.bluebox {
+        background-color: blue;
+        width: 90px;
+        height: 20px;
+        padding: 40px;
+}
+.quote {
+	width:80%;
+	margin: 30px;
+	padding:10px;
+}
+.slideheader {
+	font: bold 18px arial, sans-serif;
+	color: #f9879c;
+
+}
+.box { width: 200px;
+    height: 200px;
+    background-color: pink;
+    margin: 50px auto;
+    transition: all 2s ease 1s;
+    }
+
+ .box:hover {
+    width:500px;
+    height:500px;
+    background-color: blue;
+    transform: rotate(180deg);
+    }
+.container1 {
+position:relative;
+overflow:hidden;
+width:650px;
+}
+.container1 .textbox {
+width:647px;
+height:500px;
+position:absolute;
+top:0;
+left:0;
+margin-top:-600px;
+border-radius:5px;
+background-color: rgba(0,0,0,0.25);
+}
+.container1:hover .textbox {
+margin-top:0;
+}
+.text {
+text-align: center;
+color:White;
+font-family:helvetica, arial, sans serif;
+font-size:50px;
+font-weight:bold;
+}
+.text1{
+text-align: center;
+color:White;
+font-family:helvetica, arial, sans serif;
+font-size:36px;
+}
+.textbox {
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+.audio {
+	display:block;
+	padding: 15px;
+}
+.clearfloat { 
+	clear:both;
+}
+
+/*Alignment floats*/
+.aligncenter {
+	display:block;
+	text-align: center;
+	padding:10px;
+
+}
+.alignleft {
+	float:left;
+	padding:0px 10px 0px 15px;
+}
+.alignright {
+	float:right;
+	padding:0px 15px 0px 10px;
+}
+
+/*styles*/
+img {
+	border: none;
+	max-width: 100%;
+	height: auto;
+}
+
+li {
+	text-decoration: none;
+	list-style: none;
+}
+p {
+	padding:10px 0px;
+}
+table {
+    width:70%;
+}
+/*ids */
+#logo {
+position: relative;
+float:left;
+margin: 0 auto 0 20px;
+}
+/* links */
+a{
+	color: #10a69e;
+	text-decoration: underline;	
+}
+a:hover {
+	color:#f1B580;
+	text-decoration: underline;
+}
+a:visited {
+	color: #10a69e;
+}
+/*Mobile */
+/*For 1100px or less */
+@media screen and (max-width: 1100px) {
+    
+.container {
+	width:auto;
+	float:none;
+}
+	
+#logo {
+	margin: auto;
+	}
+
+.img {
+	max-width:100%;
+	height: auto;
+	}
+nav {
+         width: 100%;
+         float:left;
+         margin-top: 40px;
+    }
+    
+video {
+        max-width: 100%;
+        height:auto;
+    }
+audio {
+        max-width: 100%;
+        height:auto;	
+    }
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+    }
+#contactform {
+        max-width: 100%;
+        height:auto;  
+        display:block; 	        
+    }
+.rslides img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/*For 640 or less */
+@media screen and (max-width: 640px) {
+    
+nav ul{
+        margin:0px;
+        padding: 0px;
+		}
+nav a {
+        display:block;
+        border-bottom: 1px  solid #fff;
+        margin:0;
+        padding:3px;
+        }
+nav a:hover {
+        height:100%;
+        }
+textarea, #email, #subject, #name {
+	max-width:100%;
+}
+}
+@media screen and (max-width: 480px) {
+    .search {
+        display: none;
+    } 
+}
+
+  

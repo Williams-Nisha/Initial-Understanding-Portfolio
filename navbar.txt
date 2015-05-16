@@ -1,0 +1,38 @@
+[
+{
+"display": "Home",
+"url": "/"
+},
+{
+"display": "JS Objects",
+"url": "/javascript.php"
+},
+{
+"display": "DOM Manipulation",
+"url": "/dom_manipulation.php"
+},
+{
+"display": "CSS",
+"url": "/css-transitions.php"
+},
+{
+"display": "CSS Animations",
+"url": "#"
+},
+{
+"display": "Local Data Storage",
+"url": "#"
+},
+{
+"display": "Ajax",
+"url": "/ajax.php"
+},
+{
+"display": "Json",
+"url": "/json.php"
+},
+{
+"display": "Mobile Apps",
+"url": "#"
+}
+]

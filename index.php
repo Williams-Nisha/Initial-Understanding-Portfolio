@@ -24,11 +24,11 @@
         <li>Creative, pleasant, mobile user interface creation</li>
         <li><a href="/javascript.php">JavaScript objects</a></li>
         <li><a href="/dom_manipulation.php">Dom Manipulations</a></li>
-        <li>CSS3 transitions</li>
+        <li><a href="/css-transitions.php">CSS3 transitions</a></li>
         <li>CSS3 animations</li>
         <li>Using local data storage</li>
-        <li>AJAX interactions with remote services</li>
-        <li>JSON data serialization</li>
+        <li><a href="/ajax.php">AJAX interactions with remote services</a></li>
+        <li><a href="/json.php">JSON data serialization</li>
     </ul>
     </article> 
      </main>
