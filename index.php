@@ -25,7 +25,7 @@
         <li><a href="/javascript.php">JavaScript objects</a></li>
         <li><a href="/dom_manipulation.php">Dom Manipulations</a></li>
         <li><a href="/css-transitions.php">CSS3 transitions</a></li>
-        <li>CSS3 animations</li>
+        <li><a href="css_animations.php">CSS3 animations</li>
         <li>Using local data storage</li>
         <li><a href="/ajax.php">AJAX interactions with remote services</a></li>
         <li><a href="/json.php">JSON data serialization</li>
