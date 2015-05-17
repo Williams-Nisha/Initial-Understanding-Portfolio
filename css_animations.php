@@ -59,6 +59,7 @@
     width: 200px;
     height: 200px;
     background-color: pink;
+    border-radius: 50%;
     position: relative;
     /* Chrome, Safari, Opera */
     -webkit-animation-name: example;
@@ -178,6 +179,7 @@
                         width: 200px;
                         height: 200px;
                         background-color: pink;
+                        border-radius:50%;
                         position: relative;
                         /* Chrome, Safari, Opera */
                         -webkit-animation-name: example;
@@ -226,6 +228,7 @@
                        " target="_blank"> W3schools- CSS Animations</a></li>
                 <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_animations" target="_blank">Mozilla Developer Network</a></li>
                 <li><a href="http://www.justinaguilar.com/animations/" target="_blank">Justin Aguilar- Animation Cheat Sheet</a></li>
+                <li><a href="http://davidwalsh.name/css-circles" target="_blank">David Walsh- CSS Circles</a></li>
             </ul>
         </article>
      </main>
