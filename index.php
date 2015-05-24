@@ -20,13 +20,13 @@
     <article>
     <h2>Coding Subjets</h2>
     <ul class="pad">
-        <li>The software development process and some standard methodologies</li>
+        <li><a href="/software_development_process.php">The software development process and some standard methodologies</a></li>
         <li>Creative, pleasant, mobile user interface creation</li>
         <li><a href="/javascript.php">JavaScript objects</a></li>
         <li><a href="/dom_manipulation.php">Dom Manipulations</a></li>
         <li><a href="/css-transitions.php">CSS3 transitions</a></li>
-        <li><a href="css_animations.php">CSS3 animations</li>
-        <li>Using local data storage</li>
+        <li><a href="css_animations.php">CSS3 animations</a></li>
+        <li><a href="/local_storage.php">Using local data storage</a></li>
         <li><a href="/ajax.php">AJAX interactions with remote services</a></li>
         <li><a href="/json.php">JSON data serialization</li>
     </ul>
