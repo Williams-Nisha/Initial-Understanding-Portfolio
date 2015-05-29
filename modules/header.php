@@ -10,13 +10,13 @@
                  <li><a href="#">CSS</a>
                 <ul>
                     <li><a href="/css-transitions.php">Transitions</a></li>
-                  <li><a href="#">Animation</a></li>
+                    <li><a href="/css_animations.php">Animation</a></li>
                 </ul>      
                 <li><a href="/">Local Data Storage</a></li>
                 <li><a href="ajax.php">AJAX</a></li>
                 <li><a href="json.php">JSON</a></li> 
-                <li><a href="/">Development</a></li>
-                <li><a href="/">Mobile App</a></li>
+                <li><a href="/software_development_process.php">Development</a></li>
+                <li><a href="/user_interface.php">Mobile App</a></li>
             </ul>   
         </nav>
 

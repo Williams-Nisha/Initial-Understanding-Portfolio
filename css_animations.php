@@ -94,6 +94,41 @@
     75%  {background-color:turquoise; left:0px; top:200px;}
     100% {background-color:brown; left:0px; top:0px;}
 }
+#element {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+  background-color: red;
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: red;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: yellow;
+  }
+}
+
+body,
+html {
+  height: 100%;
+}
+
 </style>
 </head>
  <body>
@@ -220,6 +255,54 @@
 
             <h4>Output:</h4>
             <div id="square"></div>
+            
+            <h3>Example</h3>
+            <pre><code>
+                .element {
+                height: 250px;
+                width: 250px;
+                margin: 0 auto;
+                background-color: red;
+                animation-name: stretch;
+                animation-duration: 1.5s; 
+                animation-timing-function: ease-out; 
+                animation-delay: 0;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+                animation-fill-mode: none;
+                animation-play-state: running;
+              }
+
+              @keyframes stretch {
+                0% {
+                  transform: scale(.3);
+                  background-color: red;
+                  border-radius: 100%;
+                }
+                50% {
+                  background-color: orange;
+                }
+                100% {
+                  transform: scale(1.5);
+                  background-color: yellow;
+                }
+              }
+
+              body,
+              html {
+                height: 100%;
+              }
+
+              body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+        </code>
+        </pre>
+        
+                        <h4>Output:</h4>
+            <div id="element"></div>
         </article>
         <article>
             <h3>Resources:</h3>
