@@ -7,11 +7,12 @@
                 <li><a href="/index.php">Home</a></li>
                 <li><a href="/javascript.php">JS Objects</a></li>
                 <li><a href="/dom_manipulation.php">DOM Manipulation</a></li>
-                 <li><a href="#">CSS</a>
+                <li><a href="#">CSS</a><li>
                 <ul>
                     <li><a href="/css-transitions.php">Transitions</a></li>
                     <li><a href="/css_animations.php">Animation</a></li>
                 </ul>      
+
                 <li><a href="/">Local Data Storage</a></li>
                 <li><a href="ajax.php">AJAX</a></li>
                 <li><a href="json.php">JSON</a></li> 

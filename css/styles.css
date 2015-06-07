@@ -1,48 +1,48 @@
 /*Css stylesheet for nishamwilliams.com*/
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 body {
-	font-family:Arial, Helvetica, sans-serif;
-	font-size: 1em;
-	background: url(/images/swirl.png)repeat top left #9ce5e0;
-	color: #222;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background: url(/images/swirl.png)repeat top left #9ce5e0;
+    color: #222;
 
-	
+
 }
 h2, h3, h4, h5, h6 {
-	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
-	padding:0px;
+    margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+    padding:0px;
 }
 
 h1 {
-	font-size: 1.75em;
-	color:#27B3CF;
-	text-align: center;
+    font-size: 1.75em;
+    color:#27B3CF;
+    text-align: center;
 }
 h2 {
-	font-size: 1.625em;
-	color:#27B3CF;
+    font-size: 1.625em;
+    color:#27B3CF;
 }
 h3 {
-	font-size: 1.25em;
-	font-weight: bold;
-	color:#27B3CF;
+    font-size: 1.25em;
+    font-weight: bold;
+    color:#27B3CF;
 }
 h4 {
-	font-size: 1.125em;
-	font-weight: bold;
+    font-size: 1.125em;
+    font-weight: bold;
 }
 h5 {
-	font-size: 1em;
-	color:#f7bc80;
-	font-weight: bold;
+    font-size: 1em;
+    color:#f7bc80;
+    font-weight: bold;
 }
 h6 {
-	font-size: 1em;
-	color:#f7bc80;
-	font-weight: bold;
+    font-size: 1em;
+    color:#f7bc80;
+    font-weight: bold;
 }
 
 nav ul{
@@ -51,244 +51,430 @@ nav ul{
     margin: 20px 0;
 }
 nav li {
-	display:inline;
-	margin: 0 10px;
+    display:inline;
+    margin: 0 10px;
 }
 
 nav ul li a:hover {
-	color:#fff;
-	text-decoration:none;
-	padding: 15px 0px;
-	background:#27B3CF;
+    color:#fff;
+    text-decoration:none;
+    padding: 15px 0px;
+    background:#27B3CF;
 }
 navul li:hover > ul
 {
-	display:block;
+    display:block;
 }
 nav ul li a:visited {
-	color:#fff;
+    color:#fff;
 }
 nav ul li a {
-	text-decoration: none;
-	color: #fff;
-	font-weight: bold;
-	font-size:1.1rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size:1.1rem;
 }
 nav ul ul
 {
-	display:none;
-	position:absolute;
-	top:100%;
-	left:0;
-	background:#fff;
-	padding:0
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#fff;
+    padding:0
 }
 
 nav ul ul li
 {
-	float:none;
-	width:200px
+    float:none;
+    width:200px
 }
 
 nav ul ul a
 {
-	line-height:120%;
-	padding:10px 15px
+    line-height:120%;
+    padding:10px 15px
 }
 pre {
     white-space: pre-wrap;
 }
 main {
-	width: 90%;
-	margin:0 auto;
+    width: 90%;
+    margin:0 auto;
 }
 footer {
-	background-color: #f9879c;
-	margin:20px 0 0;
-	color: #fff;
-	padding:10px;
-	margin:30px 0px 0px;
+    background-color: #f9879c;
+    margin:20px 0 0;
+    color: #fff;
+    padding:10px;
+    margin:30px 0px 0px;
 }
 footer a {
-	text-decoration: none;
-	color:#fff;
-	padding:0 10px;
+    text-decoration: none;
+    color:#fff;
+    padding:0 10px;
 }
 footer a:visited {
-        color:#fff;
+    color:#fff;
 }
 /*Structure for the website*/
 .container {
-	width:1100px;
-	background-color: #fff;
-	margin: 0 auto;
+    width:1100px;
+    background-color: #fff;
+    margin: 0 auto;
 
 }
 .featurecontainer {
-	margin-left: auto;
-	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .featurebox{
-	padding: 8px;
-	float:left;
-	margin: 20px;
+    padding: 8px;
+    float:left;
+    margin: 20px;
+}
+//css transitions example demo
+#delay_demo {
+    position:relative;
+    width:500px;
+    height:400px;
+    margin:0 auto 10px;
+    border:1px #aaa solid;
+    padding:10px;
+}
+#dd_main {
+    width:100px;
+    height:100px;
+    margin: auto;
+    background-color:red;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;}
+#delay_demo .center {
+    width:500px;
+    position:absolute;
+    bottom:20px;
+}
+#dd1, #dd2, #dd3, #dd4, #dd5, #dd6, #dd7, #dd8 {
+    width:20px;
+    height:20px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    position:absolute;
+    top:4090px;
+    left:750px;
+    background-color:blue;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);}
+#dd1 {
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    -ms-transition-delay: 0.1s;
+    transition-delay: 0.1s;  }
+#dd2 {
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    transition-delay: 0.2s;  }
+#dd3 {
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    -ms-transition-delay: 0.3s;
+    transition-delay: 0.3s;  }
+#dd4 {
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    -o-transition-delay: 0.4s;
+    -ms-transition-delay: 0.4s;
+    transition-delay: 0.4s;  }
+#dd5 {
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    transition-delay: 0.5s;  }
+#dd6 {
+    -webkit-transition-delay: 0.6s;
+    -moz-transition-delay: 0.6s;
+    -o-transition-delay: 0.6s;
+    -ms-transition-delay: 0.6s;
+    transition-delay: 0.6s;  }
+#dd7 {
+    -webkit-transition-delay: 0.7s;
+    -moz-transition-delay: 0.7s;
+    -o-transition-delay: 0.7s;
+    -ms-transition-delay: 0.7s;
+    transition-delay: 0.7s;  }
+#dd8 {
+    -webkit-transition-delay: 0.8s;
+    -moz-transition-delay: 0.8s;
+    -o-transition-delay: 0.8s;
+    -ms-transition-delay: 0.8s;
+    transition-delay: 0.8s;  }
+#delay_demo:hover #dd_main {
+    opacity:0;
+}
+#delay_demo:hover #dd1, #delay_demo.hover_effect #dd1 {
+    -webkit-transform: translate(-250px,-200px);
+    -moz-transform: translate(-250px,-200px);
+    -o-transform: translate(-250px,-200px);
+    -ms-transform: translate(-250px,-200px);
+    transform: translate(-250px,-200px);}
+#delay_demo:hover #dd2, #delay_demo.hover_effect #dd2 {
+    -webkit-transform: translate(0,-200px);
+    -moz-transform: translate(0,-200px);
+    -o-transform: translate(0,-200px);
+    -ms-transform: translate(0,-200px);
+    transform: translate(0,-200px);}
+#delay_demo:hover #dd3, #delay_demo.hover_effect #dd3 {
+    -webkit-transform: translate(250px,-200px);
+    -moz-transform: translate(250px,-200px);
+    -o-transform: translate(250px,-200px);
+    -ms-transform: translate(250px,-200px);
+    transform: translate(250px,-200px);}
+#delay_demo:hover #dd4, #delay_demo.hover_effect #dd4 {
+    -webkit-transform: translate(250px, 0);
+    -moz-transform: translate(250px, 0);
+    -o-transform: translate(250px, 0);
+    -ms-transform: translate(250px, 0);
+    transform: translate(250px, 0);}
+#delay_demo:hover #dd5, #delay_demo.hover_effect #dd5 {
+    -webkit-transform: translate(250px,200px);
+    -moz-transform: translate(250px,200px);
+    -o-transform: translate(250px,200px);
+    -ms-transform: translate(250px,200px);
+    transform: translate(250px,200px);}
+#delay_demo:hover #dd6, #delay_demo.hover_effect #dd6 {
+    -webkit-transform: translate(0,200px);
+    -moz-transform: translate(0,200px);
+    -o-transform: translate(0,200px);
+    -ms-transform: translate(0,200px);
+    transform: translate(0,200px);}
+#delay_demo:hover #dd7, #delay_demo.hover_effect #dd7 {
+    -webkit-transform: translate(-250px,200px);
+    -moz-transform: translate(-250px,200px);
+    -o-transform: translate(-250px,200px);
+    -ms-transform: translate(-250px,200px);
+    transform: translate(-250px,200px);}
+#delay_demo:hover #dd8, #delay_demo.hover_effect #dd8 {
+    -webkit-transform: translate(-250px,0);
+    -moz-transform: translate(-250px,0);
+    -o-transform: translate(-250px,0);
+    -ms-transform: translate(-250px,0);
+    transform: translate(-250px,0);}
+
+//css transitions tool tip message
+.container2 {
+    overflow:hidden;    
+    width:200px;
+    height:150px;
+
+}
+.container2 .textbox1 {
+    top:0;
+    left:0;
+    width:200px;
+    height:150px;
+    margin-top: -100px;
+    z-index: 1;
+}
+.container2:hover .textbox1 {
+    margin-left:0;
+}
+.container2 img {
+    position:relative;
+    margin-left:0;
+    z-index: 5;
+
+}
+.container2:hover img {
+    margin-left:210px;
+}
+.text2 {
+    position:absolute;
+    text-align: center;
+    color:#666;
+    font-family:helvetica, arial, sans serif;
+    font-size:15px;
+    font-weight:bold;
+    width: 200px;
+}
+.container2 img, .textbox1 {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
 }
 .pad    {
-        padding:8px;
-        margin: 20px;
+    padding:8px;
+    margin: 20px;
 }
 .bluebox {
-        background-color: blue;
-        width: 90px;
-        height: 20px;
-        padding: 40px;
+    background-color: blue;
+    width: 90px;
+    height: 20px;
+    padding: 40px;
 }
 .quote {
-	width:80%;
-	margin: 30px;
-	padding:10px;
+    width:80%;
+    margin: 30px;
+    padding:10px;
 }
 .slideheader {
-	font: bold 18px arial, sans-serif;
-	color: #f9879c;
+    font: bold 18px arial, sans-serif;
+    color: #f9879c;
 
 }
 .box { width: 200px;
-    height: 200px;
-    background-color: pink;
-    margin: 50px auto;
-    transition: all 2s ease 1s;
-    }
+       height: 200px;
+       background-color: pink;
+       margin: 50px auto;
+       transition: all 2s ease 1s;
+}
 
- .box:hover {
+.box:hover {
     width:500px;
     height:500px;
     background-color: blue;
     transform: rotate(180deg);
-    }
+}
 .container1 {
-position:relative;
-overflow:hidden;
-width:650px;
+    position:relative;
+    overflow:hidden;
+    width:650px;
 }
 .container1 .textbox {
-width:647px;
-height:500px;
-position:absolute;
-top:0;
-left:0;
-margin-top:-600px;
-border-radius:5px;
-background-color: rgba(0,0,0,0.25);
+    width:647px;
+    height:500px;
+    position:absolute;
+    top:0;
+    left:0;
+    margin-top:-600px;
+    border-radius:5px;
+    background-color: rgba(0,0,0,0.25);
 }
+
 .container1:hover .textbox {
-margin-top:0;
+    margin-top:0;
 }
 .text {
-text-align: center;
-color:White;
-font-family:helvetica, arial, sans serif;
-font-size:50px;
-font-weight:bold;
+    text-align: center;
+    color:White;
+    font-family:helvetica, arial, sans serif;
+    font-size:50px;
+    font-weight:bold;
 }
 .text1{
-text-align: center;
-color:White;
-font-family:helvetica, arial, sans serif;
-font-size:36px;
+    text-align: center;
+    color:White;
+    font-family:helvetica, arial, sans serif;
+    font-size:36px;
 }
 .textbox {
--webkit-transition: all 0.7s ease;
-transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
 }
 
 .audio {
-	display:block;
-	padding: 15px;
+    display:block;
+    padding: 15px;
 }
 .clearfloat { 
-	clear:both;
+    clear:both;
 }
 
 /*Alignment floats*/
 .aligncenter {
-	display:block;
-	text-align: center;
-	padding:10px;
+    display:block;
+    text-align: center;
+    padding:10px;
 
 }
 .alignleft {
-	float:left;
-	padding:0px 10px 0px 15px;
+    float:left;
+    padding:0px 10px 0px 15px;
 }
 .alignright {
-	float:right;
-	padding:0px 15px 0px 10px;
+    float:right;
+    padding:0px 15px 0px 10px;
 }
 
 /*styles*/
 img {
-	border: none;
-	max-width: 100%;
-	height: auto;
+    border: none;
+    max-width: 100%;
+    height: auto;
 }
 
 li {
-	text-decoration: none;
-	list-style: none;
+    text-decoration: none;
+    list-style: none;
 }
 p {
-	padding:10px 0px;
+    padding:10px 0px;
 }
 table {
     width:70%;
 }
 /*ids */
 #logo {
-position: relative;
-float:left;
-margin: 0 auto 0 20px;
+    position: relative;
+    float:left;
+    margin: 0 auto 0 20px;
 }
 /* links */
 a{
-	color: #10a69e;
-	text-decoration: underline;	
+    color: #10a69e;
+    text-decoration: underline;	
 }
 a:hover {
-	color:#f1B580;
-	text-decoration: underline;
+    color:#f1B580;
+    text-decoration: underline;
 }
 a:visited {
-	color: #10a69e;
+    color: #10a69e;
 }
 /*Mobile */
 /*For 1100px or less */
 @media screen and (max-width: 1100px) {
-    
-.container {
-	width:auto;
-	float:none;
-}
-	
-#logo {
-	margin: auto;
-	}
 
-.img {
-	max-width:100%;
-	height: auto;
-	}
-nav {
-         width: 100%;
-         float:left;
-         margin-top: 40px;
+    .container {
+        width:auto;
+        float:none;
     }
-    
-video {
+
+    #logo {
+        margin: auto;
+    }
+
+    .img {
+        max-width:100%;
+        height: auto;
+    }
+    nav {
+        width: 100%;
+        float:left;
+        margin-top: 40px;
+    }
+
+    video {
         max-width: 100%;
         height:auto;
     }
-audio {
+    audio {
         max-width: 100%;
         height:auto;	
     }
@@ -298,12 +484,12 @@ audio {
     h3 {
         text-align: center;
     }
-#contactform {
+    #contactform {
         max-width: 100%;
         height:auto;  
         display:block; 	        
     }
-.rslides img {
+    .rslides img {
         max-width: 100%;
         height: auto;
     }
@@ -311,23 +497,23 @@ audio {
 
 /*For 640 or less */
 @media screen and (max-width: 640px) {
-    
-nav ul{
+
+    nav ul{
         margin:0px;
         padding: 0px;
-		}
-nav a {
+    }
+    nav a {
         display:block;
         border-bottom: 1px  solid #fff;
         margin:0;
         padding:3px;
-        }
-nav a:hover {
+    }
+    nav a:hover {
         height:100%;
-        }
-textarea, #email, #subject, #name {
-	max-width:100%;
-}
+    }
+    textarea, #email, #subject, #name {
+        max-width:100%;
+    }
 }
 @media screen and (max-width: 480px) {
     .search {
@@ -335,4 +521,3 @@ textarea, #email, #subject, #name {
     } 
 }
 
-  

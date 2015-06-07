@@ -30,6 +30,27 @@ xmlhttp.onreadystatechange=function()
 xmlhttp.open("GET","ajax_info.txt",true);
 xmlhttp.send();
 }
+function newXMLDoc()
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("newDiv").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","ajax_joke.txt",true);
+xmlhttp.send();
+}
 </script>
  </head>
  <body>
@@ -154,6 +175,51 @@ xmlhttp.send();
                 <p>Suggestions: <span id="txtHint"></span></p>
             <hr>
         </article>
+                    <h3>Example 2</h3>
+            <p>This code examples uses ajax to change the words in an html file. It uses the get method to pull a text file from the server and create a live edit on the text. </p>
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;script&gt;
+                    function newXMLDoc()
+                    {
+                    var xmlhttp;
+                    if (window.XMLHttpRequest)
+                      {// code for IE7+, Firefox, Chrome, Opera, Safari
+                      xmlhttp=new XMLHttpRequest();
+                      }
+                    else
+                      {// code for IE6, IE5
+                      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                      }
+                    xmlhttp.onreadystatechange=function()
+                      {
+                      if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                        {
+                        document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+                        }
+                      }
+                    xmlhttp.open("GET","ajax_joke.txt",true);
+                    xmlhttp.send();
+                    }
+                    &lt;/script&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;div id="newDiv"&gt;&lt;h2&gt;Why did the chicken cross the road?&lt;/h2&gt;&lt;/div&gt;
+                    &lt;button type="button" onclick="loadXMLDoc()">Click to see&lt;/button&gt;
+
+                    &lt;/body&gt;
+                   &lt;/html&gt;
+                </code>
+            </pre>
+            <h4>Output:</h4>
+
+                <div id="newDiv"><h2>Why did the chicken cross the road?</h2></div>
+                <button type="button" onclick="newXMLDoc()">Click to see</button>
+                <br><br>
+            <hr>
         <article>
             <h2>Resources:</h2>
             <ul>

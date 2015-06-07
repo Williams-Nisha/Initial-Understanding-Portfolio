@@ -17,11 +17,11 @@
 },
 {
 "display": "CSS Animations",
-"url": "#"
+"url": "/css_animations.php"
 },
 {
 "display": "Local Data Storage",
-"url": "#"
+"url": "/local_storage.php"
 },
 {
 "display": "Ajax",
@@ -33,6 +33,6 @@
 },
 {
 "display": "Mobile Apps",
-"url": "#"
+"url": "/user_interface.php"
 }
 ]
