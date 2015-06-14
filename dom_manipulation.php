@@ -227,6 +227,34 @@
                     </script>
                     <hr>
                 </article>
+                <article>         
+                    <script>
+            function likeName() {
+                document.getElementById("likeDislike").innerHTML = "Great choice! Nisha is a beautiful and unique name for your little princess.";
+                var x = document.getElementById("name");
+                x.style.backgroundColor = "pink";
+                x.style.color = "white";
+                document.getElementById("babyPic").src = "/images/baby_with_angel_wings_sleeping.jpg";
+            }
+            function dislikeName() {
+                document.getElementById("likeDislike").innerHTML = "You definitely need to rethink your options! Nisha would be perfect for your little angel. Don't make your baby sad. :(";
+                var x = document.getElementById("name");
+                x.style.backgroundColor = "black";
+                x.style.color = "white";
+                document.getElementById("babyPic").src = "/images/crying.jpg";
+            }
+            document.getElementById("babyPic").style.border = "thin solid #000000 !important";
+            </script>
+                    <h2>Ideas on how to apply DOM Manipulation to Mobile app</h2>
+            <h3>Baby Names App</h3>
+            <p id="name"><b>Name: Nisha</b><br>
+                Description: Indian origin with the meaning "night. Closely related to Nissa. Which means "friendly elf."
+            </p>
+            <button type="button" onclick="likeName()">Like</button>
+            <button type="button" onclick="dislikeName()">Dislike</button>
+            <p id="likeDislike"></p>
+            <img id="babyPic" src="" width="250" height="250" border="1">
+                </article>
                 <article>
                     <h2>Resources:</h2>
                     <ul>
