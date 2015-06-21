@@ -187,13 +187,13 @@
 
                     &lt;p&gt;Learning is fun!&lt;/p&gt;
                     &lt;div id="color"&gt;
-                    &lt;p id="pink"&gt;Let's have some fun with color!&lt;/p>
-                      &lt;p id="yellow"&gt;It is easy to change color with &lt;b>DOM Manipulation&lt;/b>.&lt;/p&gt;
+                    &lt;p id="pink"&gt;Let's have some fun with color!&lt;/p&gt;
+                      &lt;p id="yellow"&gt;It is easy to change color with &lt;b&gt;DOM Manipulation&lt;/b&gt;.&lt;/p&gt;
                       &lt;p id="text"&gt;You can stretch the spacing in a sentence.&lt;/p&gt;
                     &lt;/div&gt;
                     &lt;p id="background">You can even change the background color of an element&lt;/p&gt;
-                    &lt;p id="p2">Hello World&lt;/p&gt;
-                    &lt;p id="tada">Tada!!&lt;/p&gt;
+                    &lt;p id="p2"&gt;Hello World&lt;/p&gt;
+                    &lt;p id="tada"&gt;Tada!!&lt;/p&gt;
                     &lt;script&gt;
                                 document.getElementById("color").style.background = "grey";
                                 document.getElementById("pink").style.color = "pink";
@@ -225,35 +225,130 @@
                         document.getElementById("p2").style.color = "blue";
                         document.getElementById("tada").style.font = "italic bold 50px Papyrus ,modern";
                     </script>
-                    <hr>
-                </article>
-                <article>         
-                    <script>
-            function likeName() {
-                document.getElementById("likeDislike").innerHTML = "Great choice! Nisha is a beautiful and unique name for your little princess.";
-                var x = document.getElementById("name");
-                x.style.backgroundColor = "pink";
-                x.style.color = "white";
-                document.getElementById("babyPic").src = "/images/baby_with_angel_wings_sleeping.jpg";
-            }
-            function dislikeName() {
-                document.getElementById("likeDislike").innerHTML = "You definitely need to rethink your options! Nisha would be perfect for your little angel. Don't make your baby sad. :(";
-                var x = document.getElementById("name");
-                x.style.backgroundColor = "black";
-                x.style.color = "white";
-                document.getElementById("babyPic").src = "/images/crying.jpg";
-            }
-            document.getElementById("babyPic").style.border = "thin solid #000000 !important";
-            </script>
+                    <hr>   
                     <h2>Ideas on how to apply DOM Manipulation to Mobile app</h2>
-            <h3>Baby Names App</h3>
-            <p id="name"><b>Name: Nisha</b><br>
-                Description: Indian origin with the meaning "night. Closely related to Nissa. Which means "friendly elf."
-            </p>
-            <button type="button" onclick="likeName()">Like</button>
-            <button type="button" onclick="dislikeName()">Dislike</button>
-            <p id="likeDislike"></p>
-            <img id="babyPic" src="" width="250" height="250" border="1">
+                    <h3>Baby Names App</h3>
+                    <p id="name"><b>Name: Nisha</b><br>
+                        Description: Indian origin with the meaning "night. Closely related to Nissa. Which means "friendly elf."
+                    </p>
+                    <button type="button" onclick="likeName()">Like</button>
+                    <button type="button" onclick="dislikeName()">Dislike</button>
+                    <p id="likeDislike"></p>
+                    <img id="babyPic" src="" width="250" height="250" border="1">
+                    <pre>
+                    <code>
+                        &lt;script&gt;
+                        function likeName() {
+                            document.getElementById("likeDislike").innerHTML = "Great choice! Nisha is a beautiful and unique name for your little princess.";
+                            var x = document.getElementById("name");
+                            x.style.backgroundColor = "pink";
+                            x.style.color = "white";
+                            document.getElementById("babyPic").src = "/images/baby_with_angel_wings_sleeping.jpg";
+                        }
+                        function dislikeName() {
+                            document.getElementById("likeDislike").innerHTML = "You definitely need to rethink your options! Nisha would be perfect for your little angel. Don't make your baby sad. :(";
+                            var x = document.getElementById("name");
+                            x.style.backgroundColor = "black";
+                            x.style.color = "white";
+                            document.getElementById("babyPic").src = "/images/crying.jpg";
+                        }
+                        document.getElementById("babyPic").style.border = "thin solid #000000 !important";
+                    &lt;/script&gt;
+                    </code>
+                    </pre>
+                    <script>
+                        function likeName() {
+                            document.getElementById("likeDislike").innerHTML = "Great choice! Nisha is a beautiful and unique name for your little princess.";
+                            var x = document.getElementById("name");
+                            x.style.backgroundColor = "pink";
+                            x.style.color = "white";
+                            document.getElementById("babyPic").src = "/images/baby_with_angel_wings_sleeping.jpg";
+                        }
+                        function dislikeName() {
+                            document.getElementById("likeDislike").innerHTML = "You definitely need to rethink your options! Nisha would be perfect for your little angel. Don't make your baby sad. :(";
+                            var x = document.getElementById("name");
+                            x.style.backgroundColor = "black";
+                            x.style.color = "white";
+                            document.getElementById("babyPic").src = "/images/crying.jpg";
+                        }
+                        document.getElementById("babyPic").style.border = "thin solid #000000 !important";
+                    </script>
+                    <hr>
+
+                    <hr>
+                    <script>
+                        function addFields() {
+                            var number = document.getElementById("member").value;
+                            var container = document.getElementById("container1");
+                            for (i = 0; i < number; i++) {
+                                container.appendChild(document.createTextNode("Chore " + (i + 1) + " "));
+                                var input = document.createElement("input");
+                                input.type = "text";
+                                input.id = "Chore " + (i + 1);
+                                container.appendChild(input);
+                                container.appendChild(document.createElement("br"));
+                            }
+                            var container = document.getElementById("container1");
+                            var btn = document.createElement("BUTTON");        // Create a <button> element
+                            var t = document.createTextNode("Submit");       // Create a text node
+                            btn.appendChild(t);                                // Append the text to <button>
+                            btn.onclick = submitValue();
+                            btn.id = "submit";
+                            container.appendChild(btn);                    // Append <button> to container1
+                        }
+                        //reset buttons
+                        function resetElements() {
+                            document.getElementById('myform').innerHTML = '';
+                        }
+                        //Submit onclick
+                        function submitValue() {
+                            alert("This really works!");
+                            
+                        }
+                    </script>
+                    <h3>Chore List</h3>
+                    <p> This was created with dom manipulation as an example of what can be done in an app. When a person puts a number in the input box, it tells the code to create that number of input boxes. It also numbers them. I created a submit button and attached an id and onclick function to it. This is
+                        just for an example, so I created an alert to be ran on onclick. It is not a perfect solution because the onclick function actually runs on creation and not after. Also, if the top button is clicked over and over, the input fields continue to be added and the number loops over and over. So there is work that needs to be done if this idea is used.</p>
+                    <input type="text" id="member" name="member" value="">Number of chores: (max. 10)<br />
+                    <button type="button" id="filldetails" onclick="addFields()">Add Chores</button><br><br>
+                    <div id="container1"></div><br><br>
+
+
+                    <button onclick="resetElements()">Reset</button>
+                    <pre>
+                        <code>
+                            &lt;script&gt;
+                            function addFields() {
+                                var number = document.getElementById("member").value;
+                                var container = document.getElementById("container1");
+                                for (i = 0; i < number; i++) {
+                                    container.appendChild(document.createTextNode("Chore " + (i + 1) + " "));
+                                    var input = document.createElement("input");
+                                    input.type = "text";
+                                    input.id = "Chore " + (i + 1);
+                                    container.appendChild(input);
+                                    container.appendChild(document.createElement("br"));
+                                }
+                                var container = document.getElementById("container1");
+                                var btn = document.createElement("BUTTON");    
+                                var t = document.createTextNode("Submit");  
+                                btn.appendChild(t);                     
+                                btn.onclick = submitValue();
+                                btn.id = "submit";
+                                container.appendChild(btn);                 
+                            }
+                            //reset buttons
+                            function resetElements() {
+                                document.getElementById('myform').innerHTML = '';
+                            }
+                            //Submit onclick
+                            function submitValue() {
+                                alert("This really works!");
+                            }
+                        &lt;/script&gt;
+                        </code>
+                    </pre>
+                    <hr>
                 </article>
                 <article>
                     <h2>Resources:</h2>
